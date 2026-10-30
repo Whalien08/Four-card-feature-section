@@ -1,0 +1,130 @@
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+    margin-top: 40px;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.main {
+    color: hsl(234, 12%, 34%);
+    text-align: center;
+    max-width: 450px;
+    margin: 0 auto 50px auto;
+}
+
+.mainhead1 {
+    color: hsl(212, 6%, 44%);
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+}
+
+.mainhead2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.main p {
+    color: hsl(212, 6%, 44%);
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.cards {
+    background-color: hsl(0, 0%, 100%);
+    width: 100%;
+    max-width: 311px; 
+    height: auto;
+    margin: 0 auto 25px auto;
+    padding: 28px 30px;
+    box-shadow: 0px 15px 30px -11px rgba(131, 149, 178, 0.5);
+    border-radius: 10px;
+    border-top: 4px solid;
+    box-sizing: border-box;
+}
+
+.head {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.cards p {
+    color: hsl(212, 6%, 44%);
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-top: 30px;
+    max-width: 60px;
+}
+
+#teal {
+    border-top-color: hsl(180, 62%, 55%);
+}
+#red {
+    border-top-color: hsl(0, 78%, 62%);
+}
+#yellow {
+    border-top-color: hsl(34, 97%, 64%);
+}
+#blue {
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+@media (min-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    .main{
+        min-width:550px;
+    }
+    .cards {
+        margin: 0;
+        width: 350px;
+    }
+
+    #teal {
+        grid-column: 1;
+        grid-row: 1 / span 2; 
+    }
+
+    #red {
+        grid-column: 2;
+        grid-row: 1; 
+    }
+
+    #yellow {
+        grid-column: 2;
+        grid-row: 2; 
+    }
+
+    #blue {
+        grid-column: 3;
+        grid-row: 1 / span 2; 
+    }
+}
